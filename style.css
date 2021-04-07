@@ -1,0 +1,62 @@
+/* #代表自己設定的標籤 .前面空白代表標籤裡的標籤 .代表自己設定的class標籤*/
+#section1 .jumbotron{
+
+    height: 70vh;
+}
+
+
+/* #代表自己設定的標籤 空白代表標籤裡的標籤 沒有.因為h1不是自己設的class*/
+#section1 h1{
+
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+#section1 .container {
+    margin: 0;
+    position: relative; /*設定位置為相對位置，absolute為絕對位置*/
+    top: 50%;
+    left: 15%;
+    -ms-transform: translateY(-50%);       /*參數設定*/
+    transform: translateY(-50%);
+}
+
+/* 主選單LOGO*/
+header nav img {
+    width: 75px;
+}
+
+/* 主選單標籤的距離*/
+header .navbar-brand {
+    margin-right: 30px;
+}
+/*主選單LOGO照片在768px以下時可以隨著螢幕縮小跟著縮小 */
+@media screen and (max-width: 768px) {
+    .navbar-brand img {
+        width: 60px;
+    }
+}
+header li {
+    margin-right: 35px;
+}
+
+#section2 img {
+
+    margin-bottom:-20;
+    width: 150px;
+    border-radius: 100% /*圖片四邊的圓角*/
+}
+#section2 h4 {
+    padding-top: 25px; /*第二段往下修:元件(文字)跟區塊不能互相推開，所以要用padding。也可以用section去padding*/
+    margin-bottom: 20px;
+}
+#section2 p {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+
+#section3{
+    padding-top: 70px; /*第二段往下修:元件(文字)跟區塊不能互相推開，所以要用padding。也可以用section去padding*/
+}
+
